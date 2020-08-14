@@ -1,21 +1,33 @@
 body {
   background-image: ;
-  background-color: #cccccc;
+  background-color: #e3fdfd;
  }
 
 .navbar {
   background-color: #71c9ce;
 }
 
+.navbar-div{
+  width: 85%;
+}
+
 .nav-item{
   margin: auto 1rem;
 }
 
-.side-bar{
+/* sidebar-nav */
+.side-bar-nav a {
+  color: #71c9ce;
+}
+
+.side-bar-nav a:hover {
+  background-color: #cbf1f5;
+  color: #71c9ce;
 }
 
 
 .main-container{
-  width:75%;
+  width:85%;
   margin: 0 auto;
 }
+
