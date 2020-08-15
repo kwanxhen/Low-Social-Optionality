@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Font Family -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -22,7 +25,8 @@
     crossorigin="anonymous"></script>
 
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../public/css/app.css" />
@@ -63,21 +67,123 @@
     </div>
   </nav>
 
-  <div class="container-fluid mt-3 main-container">
+  <!-- Main Body Section -->
+  <div class="container-fluid main-container mt-5">
     <div class="row">
-      <div class="col-2">
-        <nav class="nav flex-column side-bar-nav">
-          <a class="nav-link" href="#"><i class="fas fa-bars"></i> All</a>
-          <a class="nav-link" href="#"><i class="fas fa-mountain"></i> Terra</a>
-          <a class="nav-link" href="#"><i class="fas fa-water"></i> Ocean</a>
-          <a class="nav-link" href="#"><i class="fas fa-tree"></i> Forest</a>
-          <a class="nav-link" href="#"><i class="fas fa-city"></i> City</a>
-          <a class="nav-link" href="#"><i class="fas fa-utensils"></i> Foodie</a>
-          <a class="nav-link" href="#"><i class="fas fa-gamepad"></i> Games-night</a>
-          <a class="nav-link" href="#"><i class="fas fa-glass-cheers"></i> Energetic</a>
-          <a class="nav-link" href="#"><i class="fas fa-child"></i> Kiddos</a>
 
-        </nav>
+      <!-- Sidebar Nav Section -->
+      <div class="col-3">
+        <div class="side-bar-nav-div">
+          <nav class="nav flex-column side-bar-nav">
+            <a class="nav-link" href="#"><i class="fas fa-bars fa-fw"></i> All</a>
+            <a class="nav-link" href="#"><i class="fas fa-mountain fa-fw"></i> Terra</a>
+            <a class="nav-link" href="#"><i class="fas fa-water fa-fw"></i> Ocean</a>
+            <a class="nav-link" href="#"><i class="fas fa-tree fa-fw"></i> Forest</a>
+            <a class="nav-link" href="#"><i class="fas fa-city fa-fw"></i> City</a>
+            <a class="nav-link" href="#"><i class="fas fa-utensils fa-fw"></i> Foodie</a>
+            <a class="nav-link" href="#"><i class="fas fa-gamepad fa-fw"></i> Games-night</a>
+            <a class="nav-link" href="#"><i class="fas fa-glass-cheers fa-fw"></i> Energetic</a>
+            <a class="nav-link" href="#"><i class="fas fa-child fa-fw"></i> Kiddos</a>
+          </nav>
+        </div>
+        
+      </div>
+
+      <!-- Posts Section -->
+      <div class="col-9">
+
+        <!-- Selected Topic Header -->
+        <div class="row topic-header mb-4">
+          <div class="col-2">
+            <div class="square-icon-bg">
+              <i class="fas fa-water fa-3x "></i>
+            </div>
+          </div>
+          <div class="col-10">
+            <h2>Ocean</h1>
+              <p>Welcome to the Ocean adventures, where pods of sea-loving creatures like you gather for a wavy journey.
+                Sea ya later! </p>
+          </div>
+        </div>
+
+        <!-- Each Post -->
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Deep Diving, Scuba Diving and Coral Reefs Visit</h5>
+            <div class="card-info">
+              <img class="whale-user-icon" src="../public/css/img/whale.png" width="30" height="30" />
+              <div class="whale-user-info">
+                Chill Whale
+              </div>
+              <div class="whale-user-posted-date">
+                Posted 12 Feb
+              </div>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus pharetra ex
+              sed cursus. In hac habitasse platea dictumst. Quisque sed tempor quam, quis varius arcu. Proin fringilla
+              eros tellus, ac rutrum orci congue a. Vestibulum blandit sagittis ultrices. Pellentesque pulvinar
+              elementum imperdiet.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Deep Diving, Scuba Diving and Coral Reefs Visit</h5>
+            <div class="card-info">
+              <img class="whale-user-icon" src="../public/css/img/whale.png" width="30" height="30" />
+              <div class="whale-user-info">
+                Chill Whale
+              </div>
+              <div class="whale-user-posted-date">
+                Posted 12 Feb
+              </div>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus pharetra ex
+              sed cursus. In hac habitasse platea dictumst. Quisque sed tempor quam, quis varius arcu. Proin fringilla
+              eros tellus, ac rutrum orci congue a. Vestibulum blandit sagittis ultrices. Pellentesque pulvinar
+              elementum imperdiet.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Deep Diving, Scuba Diving and Coral Reefs Visit</h5>
+            <div class="card-info">
+              <img class="whale-user-icon" src="../public/css/img/whale.png" width="30" height="30" />
+              <div class="whale-user-info">
+                Chill Whale
+              </div>
+              <div class="whale-user-posted-date">
+                Posted 12 Feb
+              </div>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus pharetra ex
+              sed cursus. In hac habitasse platea dictumst. Quisque sed tempor quam, quis varius arcu. Proin fringilla
+              eros tellus, ac rutrum orci congue a. Vestibulum blandit sagittis ultrices. Pellentesque pulvinar
+              elementum imperdiet.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Deep Diving, Scuba Diving and Coral Reefs Visit</h5>
+            <div class="card-info">
+              <img class="whale-user-icon" src="../public/css/img/whale.png" width="30" height="30" />
+              <div class="whale-user-info">
+                Chill Whale
+              </div>
+              <div class="whale-user-posted-date">
+                Posted 12 Feb
+              </div>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus pharetra ex
+              sed cursus. In hac habitasse platea dictumst. Quisque sed tempor quam, quis varius arcu. Proin fringilla
+              eros tellus, ac rutrum orci congue a. Vestibulum blandit sagittis ultrices. Pellentesque pulvinar
+              elementum imperdiet.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
