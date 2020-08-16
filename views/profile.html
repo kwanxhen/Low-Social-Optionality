@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- Font Family -->
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+
+   <!-- Font Awesome CSS -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="../public/css/profile.css" />
+
+   <title>Low Social Optionality</title>
+</head>
+
+<body>
+   <!-- Navigation Bar -->
+   <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container-fluid navbar-div">
+         <a class="navbar-brand" href="/">
+            <img src="../public/css/img/whale.png" width="30" height="30" class="d-inline-block align-top" alt=""
+               loading="lazy" />
+            Lovely Whale
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Browse</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+               </li>
+               <li class="nav-item">
+                  <button type="button" class="btn btn-outline-light">
+                     <a class="nav-link" href="#">Plan Adventure</a>
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Main Body Section -->
+   <div class="container-fluid main-container mt-5">
+      <div class="row">
+         <!-- Profile Details Section -->
+         <div class="col-3">
+            <div class="card" id="profile-card">
+               <div class="card-body p-0">
+                  <div class="profile-card-main">
+                     <div id="user-color-band" style="background-color: rgb(186, 152, 224); opacity: 0.3;"></div>
+                     <div id="user-activity-thumb" class="d-thumbnail" style="background-color: rgb(186, 152, 224);">
+                     </div>
+                     <div id="user-name-container">
+                        <div id="user-alias">Elated Whale</div>
+                        <div id="user-google-name">Tim Francis</div>
+                     </div>
+                     <div id="user-data-container">
+                        <div class="user-data-line">
+                           <div class="user-trophy-icon"></div>
+                           <div id="number-adventures">
+                              4 adventures
+                           </div>
+                        </div>
+                        <div class="user-data-line">
+                           <div class="user-trophy-icon"></div>
+                           <div id="number-updates">
+                              0 Updates
+                           </div>
+                        </div>
+                        <div class="user-data-line">
+                           <div class="user-trophy-icon"></div>
+                           <div id="number-hearts">
+                              Liked 2 Adventures
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Posts Section -->
+         <div class="col-9">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">
+                     Deep Diving, Scuba Diving and Coral Reefs Visit
+                  </h5>
+                  <div class="card-info">
+                     <img class="whale-user-icon" src="../public/css/img/whale.png" width="30" height="30" />
+                     <div class="whale-user-info">
+                        Chill Whale
+                     </div>
+                     <div class="whale-user-posted-date">
+                        Posted 12 Feb
+                     </div>
+                  </div>
+                  <p class="card-text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Phasellus finibus pharetra ex sed cursus. In hac habitasse
+                     platea dictumst. Quisque sed tempor quam, quis varius arcu.
+                     Proin fringilla eros tellus, ac rutrum orci congue a. Vestibulum
+                     blandit sagittis ultrices. Pellentesque pulvinar elementum
+                     imperdiet.
+                  </p>
+               </div>
+            </div>
+
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">
+                     Deep Diving, Scuba Diving and Coral Reefs Visit
+                  </h5>
+                  <div class="card-info">
+                     <img class="whale-user-icon" src="../public/css/img/whale.png" width="30" height="30" />
+                     <div class="whale-user-info">
+                        Chill Whale
+                     </div>
+                     <div class="whale-user-posted-date">
+                        Posted 12 Feb
+                     </div>
+                  </div>
+                  <p class="card-text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Phasellus finibus pharetra ex sed cursus. In hac habitasse
+                     platea dictumst. Quisque sed tempor quam, quis varius arcu.
+                     Proin fringilla eros tellus, ac rutrum orci congue a. Vestibulum
+                     blandit sagittis ultrices. Pellentesque pulvinar elementum
+                     imperdiet.
+                  </p>
+               </div>
+            </div>
+
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">
+                     Deep Diving, Scuba Diving and Coral Reefs Visit
+                  </h5>
+                  <div class="card-info">
+                     <img class="whale-user-icon" src="../public/css/img/whale.png" width="30" height="30" />
+                     <div class="whale-user-info">
+                        Chill Whale
+                     </div>
+                     <div class="whale-user-posted-date">
+                        Posted 12 Feb
+                     </div>
+                  </div>
+                  <p class="card-text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Phasellus finibus pharetra ex sed cursus. In hac habitasse
+                     platea dictumst. Quisque sed tempor quam, quis varius arcu.
+                     Proin fringilla eros tellus, ac rutrum orci congue a. Vestibulum
+                     blandit sagittis ultrices. Pellentesque pulvinar elementum
+                     imperdiet.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
