@@ -60,14 +60,53 @@
             <a class="nav-link" href="/profile">Profile</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-outline-light  ">
-              <a class="nav-link" href="#">Plan Adventure</a>
+            <!-- Button trigger Plan Adventure modal-->
+            <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#planAdventureModal">
+              Plan Adventure
             </button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Plan Adventure Modal-->
+  <div class="modal fade" id="planAdventureModal" tabindex="-1" role="dialog"
+    aria-labelledby="AdventureModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <textarea id="planAdventureModalTitle" placeholder="What's your adventure" class="form-control"
+                id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+              <textarea id="planAdventureModalContent"
+                placeholder="Enter details about your adventure here. The more details the merrier!"
+                class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+            <div id="modal-cat-title">SELECT CATEGORIES</div>
+            <div class="modal-cat-container">
+              <div class="modal-cat-element">Terra</div>
+              <div class="modal-cat-element">Ocean</div>
+              <div class="modal-cat-element">Forest</div>
+              <div class="modal-cat-element">City</div>
+              <div class="modal-cat-element">Foodie</div>
+              <div class="modal-cat-element">Games-night</div>
+              <div class="modal-cat-element">Energetic</div>
+              <div class="modal-cat-element">Kiddos</div>
+            </div>
+            <div id="modal-cancelPostBtn-container" class="float-right">
+              <button id="modal-cancel-btn" type="button" class="btn btn-outline-secondary"
+                data-dismiss="modal">Cancel</button>
+              <button id="modal-post-btn" type="submit" class="btn btn-primary">Post</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Body Section -->
   <div class="container-fluid main-container mt-5">

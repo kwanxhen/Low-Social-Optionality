@@ -101,11 +101,69 @@ body {
   color: rgba(0,0,0,.54);
 }
 
+/* Plan Adventure Modal*/
+
+.form-control::-webkit-input-placeholder {
+  color: #a7b6c2;
+}
+
+#planAdventureModalTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #394b59;
+  border-width: 0px;
+  resize: none;
+}
 
 
+#planAdventureModalContent {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #5c7080;
+  border-width: 0px;
+  resize: none;
+}
 
+#modal-cat-title {
+  font-family: 'Open Sans', sans-serif;
+  color: #a7b6c2;
+  letter-spacing: 0.7px;
+  padding: 2px 12px;
+}
 
+.modal-cat-container{
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
 
+.modal-cat-element {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #a7b6c2;
+  padding: 2px 7px;
+  margin: 5px 5px 0 0;
+  border: 1px solid #a7b6c2;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.modal-cat-element:hover{
+  cursor: pointer;
+  border-color: #738694;
+  color: #738694;
+}
+
+#modal-post-btn {
+  background-color: #4f9da1;
+  border-color: #4f9da1;
+}
+
+#modal-post-btn:hover {
+  background-color: #71c9ce;
+}
 
 
 
