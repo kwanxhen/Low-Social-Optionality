@@ -41,8 +41,8 @@ body {
   margin-right: 0.4rem;
 }
 
-/* topic header */
-.topic-header {
+/* category header */
+.category-header {
   color: #71c9ce;
 }
 
@@ -166,9 +166,10 @@ body {
 }
 
 
-
-
-
+/* dynamic navbar styles*/
+.active-category {
+  background-color: #cbf1f5;
+}
 
 
 
