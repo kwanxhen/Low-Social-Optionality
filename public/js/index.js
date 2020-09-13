@@ -4,6 +4,7 @@ function main() {
   //render posts based on cat-header
 }
 
+//main page category header render
 function renderCategoryHeader() {
   const postSectionDiv = document.getElementById("post-section");
   //Declaring variables for dynamic rendering of Category Header
@@ -94,4 +95,70 @@ function renderCategoryHeader() {
   `;
 }
 
+//render category navbar
+function renderCategoryNavbar() {
+  const categoryNavbarDiv = document.getElementById("category-navbar");
+  categoryNavbarDiv.innerHTML = `
+  <nav class="nav flex-column side-bar-nav">
+    <a class="nav-link active-category" href="#top"
+      ><i class="fas fa-bars fa-fw"></i>All</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-mountain fa-fw"></i>Terra</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-water fa-fw"></i>Ocean</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-tree fa-fw"></i>Forest</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-city fa-fw"></i>City</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-utensils fa-fw"></i>Foodie</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-gamepad fa-fw"></i>Games-night</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-glass-cheers fa-fw"></i>Energetic</a
+    >
+    <a class="nav-link" href="#top"
+      ><i class="fas fa-child fa-fw"></i>Kiddos</a
+    >
+  </nav>
+  `;
+
+  //add onclick event to all the anchor tags, the category navlink
+  const navlinkArray = document
+    .getElementById("category-navbar")
+    .querySelectorAll("a");
+  navlinkArray.forEach(function (elem) {
+    console.log(elem);
+    elem.addEventListener("click", function (e) {
+      console.log(e.target);
+      navlinkArray.forEach(function (elem) {
+        if (elem.classList.contains("active-category")) {
+          elem.classList.remove("active-category");
+        }
+      });
+      e.target.classList.add("active-category");
+      renderCategoryHeader();
+    });
+    console.log(elem);
+  });
+}
+
+renderCategoryNavbar();
 renderCategoryHeader();
+
+//why cant you define the function outside and put it in callback function -> error e not defined
+// function addRemoveActiveCategory(e) {
+//   navlinkArray.forEach(function(elem){
+//     if (elem.classList.contains("active-category")) {
+//       elem.classList.remove("active-category");
+//     }
+//   });
+//   e.target.classList.add("active-category");
+// }
